@@ -29,9 +29,7 @@ def load_saved_artifacts():
     if __model is None:
         with open('./artifacts/thesis.pickle', 'rb') as f:
             __model = pickle.load(f)
-    print("loading model...done")
 
 
 if __name__ == '__main__':
     load_saved_artifacts()
-    print(get_estimated_package(10,3,9,3,9,4,54,4))
