@@ -32,7 +32,7 @@ def load_saved_artifacts():
             __model = pickle.load(f)
 
 
-@app.route('/predict')
+@app.route('/predict',methods = ['POST', 'GET'])
 def predict():
     score_1 = float(request.values.get('score_1'))
     package_1 = float(request.values.get('package_1'))
