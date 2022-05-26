@@ -47,4 +47,4 @@ def predict():
     
 if __name__ == "__main__":
     load_saved_artifacts()
-    app.run(host='34.87.30.102',port=81, debug=True)
+    app.run(host='10.148.0.3', debug=True)
