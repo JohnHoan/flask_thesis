@@ -22,12 +22,12 @@ def get_estimated_package(score_1,package_1,score_2,package_2,score_3,package_3,
 def load_saved_artifacts():
     global  __data_columns
     if __data_columns is None:
-        with open("./artifacts/columns.json", "r") as f:
+        with open("columns.json", "r") as f:
             __data_columns = json.load(f)['data_columns']
 
     global __model
     if __model is None:
-        with open('./artifacts/thesis.pickle', 'rb') as f:
+        with open('thesis.pickle', 'rb') as f:
             __model = pickle.load(f)
 
 
