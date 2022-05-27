@@ -34,11 +34,11 @@ def load_saved_artifacts():
 
 @app.route('/predict',methods=['POST'])
 def predict():
-    score_1 = float(request.values.get('score_1'))
+    score_1 = float(request.values.get('score_1'))*2
     package_1 = float(request.values.get('package_1'))
-    score_2 = float(request.values.get('score_2'))
+    score_2 = float(request.values.get('score_2'))*2
     package_2 = float(request.values.get('package_2'))
-    score_3 = float(request.values.get('score_3'))
+    score_3 = float(request.values.get('score_3'))*2
     package_3 = float(request.values.get('package_3'))
     speed = float(request.values.get('speed'))
     satisfied_level = float(request.values.get('satisfied_level'))
